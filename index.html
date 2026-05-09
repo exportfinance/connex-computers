@@ -5,14 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Connex Computers | Enterprise IT Hardware</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
-    body { font-family: system-ui, sans-serif; }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .heading { font-family: 'Space Grotesk', sans-serif; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat; }
   </style>
 </head>
 <body class="bg-zinc-950 text-white">
-  <h1 class="text-6xl text-center py-20">Connex Computers</h1>
-  <p class="text-center">Professional Enterprise IT Hardware Website</p>
-  <p class="text-center text-blue-400">1000+ Products • Servers • POE Networking • Data Cabinets • Accessories</p>
+
+  <nav class="bg-zinc-900 border-b border-zinc-700 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 bg-blue-600 rounded-2xl flex items-center justify-center text-2xl font-bold">C</div>
+        <span class="heading text-3xl font-bold tracking-tight">CONNEX</span>
+      </div>
+      <div class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#servers" class="hover:text-blue-400">Servers</a>
+        <a href="#networking" class="hover:text-blue-400">Networking</a>
+        <a href="#workstations" class="hover:text-blue-400">Workstations & Laptops</a>
+        <a href="#cabinets" class="hover:text-blue-400">Data Cabinets</a>
+        <a href="#accessories" class="hover:text-blue-400">Accessories & Cables</a>
+      </div>
+      <button onclick="alert('Quote request opened - contact sales@connexcomputers.com')" class="bg-blue-600 hover:bg-blue-500 px-8 py-3 rounded-2xl font-semibold">GET QUOTE</button>
+    </div>
+  </nav>
+
+  <section class="hero min-h-screen flex items-center">
+    <div class="max-w-6xl mx-auto px-8 text-center">
+      <h1 class="heading text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-6">
+        NEW • USED • REFURBISHED<br>
+        ENTERPRISE HARDWARE
+      </h1>
+      <p class="text-2xl text-zinc-300 max-w-3xl mx-auto">
+        Servers • POE Networking • Workstations • Data Cabinets • 1000+ Accessories<br>
+        HP • Cisco • Dell • Sun • Compaq • 3Com • Intel • ASUS
+      </p>
+    </div>
+  </section>
+
+  <div class="bg-black py-8">
+    <div class="max-w-7xl mx-auto px-8 flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-80">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Hewlett_Packard_Enterprise_logo.svg/800px-Hewlett_Packard_Enterprise_logo.svg.png" class="h-8" alt="HP">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Compaq_Logo.svg/1280px-Compaq_Logo.svg.png" class="h-8" alt="Compaq">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Cisco_logo.svg/1280px-Cisco_logo.svg.png" class="h-8" alt="Cisco">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Sun_Microsystems_logo.svg/1280px-Sun_Microsystems_logo.svg.png" class="h-8" alt="Sun">
+      <img src="https://seeklogo.com/images/3/3com-logo-1A3E4B0E5A-seeklogo.com.png" class="h-8" alt="3Com">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/ASUS_Logo.svg/1280px-ASUS_Logo.svg.png" class="h-8" alt="ASUS">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Intel_logo_%282022%29.svg/1280px-Intel_logo_%282022%29.svg.png" class="h-8" alt="Intel">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Dell_Logo.svg/1280px-Dell_Logo.svg.png" class="h-8" alt="Dell">
+    </div>
+  </div>
+
+  <footer class="bg-black py-12 text-center text-zinc-500">
+    <p class="text-lg">Connex Computers • Professional Enterprise IT Supplier</p>
+  </footer>
+
 </body>
 </html>
